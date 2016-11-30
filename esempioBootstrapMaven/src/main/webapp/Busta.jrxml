@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2016-11-25T19:42:08 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Busta" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3ce3ac6f-0e2f-4674-99ea-6bbd6e86c2e4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="FatturaDataSet" uuid="15ca12e7-656a-4414-b535-b386c8360db8">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<parameter name="importo" class="java.lang.Double"/>
+		<parameter name="dataEmissione" class="java.util.Date"/>
+		<parameter name="cognome" class="java.lang.String"/>
+		<parameter name="nome" class="java.lang.String"/>
+		<parameter name="Logo" class="java.lang.String"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="Logo" class="java.lang.String"/>
+	<parameter name="nome" class="java.lang.String"/>
+	<parameter name="cognome" class="java.lang.String"/>
+	<parameter name="dataEmissione" class="java.util.Date"/>
+	<parameter name="importo" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<ellipse>
+				<reportElement x="85" y="13" width="384" height="61" uuid="f785f97f-fb02-4c0e-aab2-4b49c130a5bc"/>
+			</ellipse>
+			<staticText>
+				<reportElement x="182" y="24" width="191" height="39" uuid="f1a7da22-0d72-4558-9788-a6c5fa37a2f1"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report Busta Paga]]></text>
+			</staticText>
+			<image>
+				<reportElement x="485" y="0" width="70" height="78" uuid="b99dca82-c91a-484c-b496-065b774a0eb7"/>
+				<imageExpression><![CDATA[$P{Logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="48" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="6" y="8" width="100" height="30" uuid="4e7db9a2-a410-474e-8198-4921af14714b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="127" y="8" width="100" height="30" uuid="e3b4da8e-0db1-4a69-ba1d-2f4f1235eb6b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="140" height="21" uuid="63ab1bee-ee3b-4290-bc8e-3b68037abda5"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="35" width="140" height="21" uuid="ff966a79-cbcc-4db1-9aed-cdf3ea994143"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cognome:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="66" width="140" height="21" uuid="a0a5821f-dade-4720-b936-d64e2555a667"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data emissione:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="104" width="140" height="21" uuid="f2f6c1a5-3736-49d1-a796-571214e57b9e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Importo:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="5" width="100" height="21" uuid="e1a3eb39-6289-44f4-9490-5296f3c23618"/>
+				<textFieldExpression><![CDATA[$P{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="35" width="100" height="21" uuid="282e6636-19c8-4068-8f0a-3c7967dcfe25"/>
+				<textFieldExpression><![CDATA[$P{cognome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="66" width="100" height="21" uuid="acaade23-a53e-49c8-9b1c-2317a49aa206"/>
+				<textFieldExpression><![CDATA[$P{dataEmissione}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="104" width="100" height="21" uuid="7cd690fa-19a9-4bc5-b0df-13b03089dfa4"/>
+				<textFieldExpression><![CDATA[$P{importo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="63" splitType="Stretch">
+			<textField>
+				<reportElement x="227" y="16" width="100" height="30" uuid="ab80ca38-bfcf-4628-b99c-1db0e14d7ae2"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
