@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2016-11-30T08:57:17 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Jas2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7f5a9d48-b5af-4ee9-90a8-a4aed5d97c9c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="jasDef"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="7a726c19-36c4-4e10-846d-88420b3de530">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="jasDef"/>
+		<queryString language="SQL">
+			<![CDATA[select * from emp]]>
+		</queryString>
+		<field name="EMPNO" class="java.math.BigDecimal"/>
+		<field name="ENAME" class="java.lang.String"/>
+		<field name="JOB" class="java.lang.String"/>
+		<field name="MGR" class="java.math.BigDecimal"/>
+		<field name="HIREDATE" class="java.sql.Timestamp"/>
+		<field name="SAL" class="java.math.BigDecimal"/>
+		<field name="COMM" class="java.math.BigDecimal"/>
+		<field name="DEPTNO" class="java.math.BigDecimal"/>
+		<group name="EMPNO">
+			<groupExpression><![CDATA[$F{EMPNO}]]></groupExpression>
+		</group>
+		<group name="ENAME">
+			<groupExpression><![CDATA[$F{ENAME}]]></groupExpression>
+		</group>
+		<group name="JOB">
+			<groupExpression><![CDATA[$F{JOB}]]></groupExpression>
+		</group>
+		<group name="MGR">
+			<groupExpression><![CDATA[$F{MGR}]]></groupExpression>
+		</group>
+		<group name="HIREDATE">
+			<groupExpression><![CDATA[$F{HIREDATE}]]></groupExpression>
+		</group>
+		<group name="SAL">
+			<groupExpression><![CDATA[$F{SAL}]]></groupExpression>
+		</group>
+		<group name="COMM">
+			<groupExpression><![CDATA[$F{COMM}]]></groupExpression>
+		</group>
+		<group name="DEPTNO">
+			<groupExpression><![CDATA[$F{DEPTNO}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select * from emp]]>
+	</queryString>
+	<field name="EMPNO" class="java.math.BigDecimal"/>
+	<field name="ENAME" class="java.lang.String"/>
+	<field name="JOB" class="java.lang.String"/>
+	<field name="MGR" class="java.math.BigDecimal"/>
+	<field name="HIREDATE" class="java.sql.Timestamp"/>
+	<field name="SAL" class="java.math.BigDecimal"/>
+	<field name="COMM" class="java.math.BigDecimal"/>
+	<field name="DEPTNO" class="java.math.BigDecimal"/>
+	<group name="EMPNO">
+		<groupExpression><![CDATA[$F{EMPNO}]]></groupExpression>
+	</group>
+	<group name="ENAME">
+		<groupExpression><![CDATA[$F{ENAME}]]></groupExpression>
+	</group>
+	<group name="JOB">
+		<groupExpression><![CDATA[$F{JOB}]]></groupExpression>
+	</group>
+	<group name="MGR">
+		<groupExpression><![CDATA[$F{MGR}]]></groupExpression>
+	</group>
+	<group name="HIREDATE">
+		<groupExpression><![CDATA[$F{HIREDATE}]]></groupExpression>
+	</group>
+	<group name="SAL">
+		<groupExpression><![CDATA[$F{SAL}]]></groupExpression>
+	</group>
+	<group name="COMM">
+		<groupExpression><![CDATA[$F{COMM}]]></groupExpression>
+	</group>
+	<group name="DEPTNO">
+		<groupExpression><![CDATA[$F{DEPTNO}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="266" splitType="Stretch">
+			<componentElement>
+				<reportElement x="289" y="66" width="200" height="200" uuid="5510f6b3-3580-461c-b7e3-a252bb52f397">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="c9468fe5-2363-4245-84a5-f1885f7c0e79">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="25" uuid="de00409a-34dd-4d16-8b79-54b6fb956d91">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="5edbfe97-ee10-44b9-b8b3-1d4bb09caff3"/>
+								<text><![CDATA[EMPNO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="558b9b0a-3a67-4c5d-8702-5d711998d620"/>
+								<textFieldExpression><![CDATA[$F{EMPNO}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="a560b88e-6656-4e98-b291-f35984303c9b">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="7fed0a43-30ad-49dc-a485-9a72c5a47e18"/>
+								<text><![CDATA[ENAME]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="2fa4e4d5-21f0-4047-a575-835e17ccd28c"/>
+								<textFieldExpression><![CDATA[$F{ENAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="f9a48371-56d0-40fb-a56c-7c2f03c1ddea">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="8d351308-9691-4126-8940-ee6b5374969d"/>
+								<text><![CDATA[JOB]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="55f5c570-8dae-4463-aa68-130d6d9d80f0"/>
+								<textFieldExpression><![CDATA[$F{JOB}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="6c24b088-d7b1-4147-8988-30ca0f3d0386">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="1f2d53c4-bd4f-4118-925f-688c02267026"/>
+								<text><![CDATA[MGR]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="2f190d7c-f78d-46d4-baaa-07a0a4b88fe1"/>
+								<textFieldExpression><![CDATA[$F{MGR}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="b476c4a6-d8cd-41cf-89e0-2273b9dd77a7">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="19b0ac11-bf35-402a-a906-c6b6c0cee749"/>
+								<text><![CDATA[HIREDATE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="70387449-4483-4f3e-b467-abf42255df99"/>
+								<textFieldExpression><![CDATA[$F{HIREDATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="b6e9c09e-81c5-4bd5-aab9-1f48e3e6316a">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="b0ebc1f3-c2d5-40dc-be4d-3ace35c28a68"/>
+								<text><![CDATA[SAL]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="68c9aed5-a141-489f-b15f-af0afbb44464"/>
+								<textFieldExpression><![CDATA[$F{SAL}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="b707fd7e-b0bf-40c1-8dcf-c1e444e62f54">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="880c7416-ed29-499d-a2bb-6957196c1d21"/>
+								<text><![CDATA[COMM]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="d91b047a-aad1-4f36-b3c4-ded11742675a"/>
+								<textFieldExpression><![CDATA[$F{COMM}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="9711cb5a-0695-4de5-be1e-1c4145b73dd1">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="30" uuid="d9f49d21-d0b1-451e-9270-932e2a3eb0e5"/>
+								<text><![CDATA[DEPTNO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="25" height="30" uuid="c5b38a4e-7d7f-4fb0-8ad9-458c7d0b5805"/>
+								<textFieldExpression><![CDATA[$F{DEPTNO}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
