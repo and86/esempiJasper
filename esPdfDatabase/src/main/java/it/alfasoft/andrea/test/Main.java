@@ -27,6 +27,7 @@ public class Main {
 		
 		Session session = HibernateUtil.openSession();	//apro una sessione in hibernate
 		try {
+			
 			FileInputStream inputStream=new FileInputStream(file);
 			
 			Blob blob= Hibernate.getLobCreator(session)
